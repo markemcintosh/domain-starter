@@ -359,7 +359,7 @@ const App = () => {
               target="_blank"
               rel="noreferrer"
             >{`@${MY_TWITTER_HANDLE}`} </a>
-			  with help from <a
+			 &nbsp;with help from <a
               href={TWITTER_LINK}
               target="_blank"
               rel="noreferrer"
