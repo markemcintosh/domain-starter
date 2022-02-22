@@ -14,7 +14,7 @@ const TWITTER_HANDLE = '_buildspace';
 const TWITTER_LINK = `https://twitter.com/${TWITTER_HANDLE}`;
 
 const tld = '.mark';
-const CONTRACT_ADDRESS = '0x6259f824CA15d12493aB3d85B8284ca80DD94eF7';
+const CONTRACT_ADDRESS = '0x51a91510941C479796F69495dde8eA58B0162A62';
 
 const App = () => {
 	const [currentAccount, setCurrentAccount] = useState('');
@@ -284,7 +284,7 @@ const App = () => {
 	// Create a function to render if wallet is not connected yet
 	const renderNotConnectedContainer = () => (
 		<div className="connect-wallet-container">
-			<img src="https://media.giphy.com/media/Q5DrY8pwlxCF3TR8b5/giphy-downsized-large.gif" alt="Ninja gif" />
+			<img class="connect-wallet-container-img" src="https://media.giphy.com/media/Q5DrY8pwlxCF3TR8b5/giphy-downsized-large.gif" alt="Fat Joe Price" />
 			<button onClick={connectWallet} className="cta-button connect-wallet-button">
 				Connect Wallet
 			</button>
@@ -354,15 +354,16 @@ const App = () => {
 
 				<div className="footer-container">
             <img alt="Twitter Logo" className="twitter-logo" src={twitterLogo} />
-            <span className="footer-text">built with help from <a
-              href={TWITTER_LINK}
-              target="_blank"
-              rel="noreferrer"
-            >{`@${TWITTER_HANDLE}`}</a> by <a
+            <span className="footer-text"> Built by <a
               href={MY_TWITTER_LINK}
               target="_blank"
               rel="noreferrer"
-            >{`@${MY_TWITTER_HANDLE}`}</a>
+            >{`@${MY_TWITTER_HANDLE}`} </a>
+			  with help from <a
+              href={TWITTER_LINK}
+              target="_blank"
+              rel="noreferrer"
+            >{`@${TWITTER_HANDLE}`}</a>
            </span> 
           </div>
 			</div>

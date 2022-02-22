@@ -29,6 +29,7 @@ header{
 }
 
 .title {
+  text-align: center;
   margin: 0;
   font-size: 35px;
   font-weight: bold;
@@ -41,8 +42,9 @@ header{
 }
 
 .left{
-  text-align: left;
-  margin-left: 10%;
+  text-align: auto;
+  margin-left: 29%;
+  
 }
 
 .logo{
@@ -85,12 +87,22 @@ header{
   max-width: 550px;
 }
 
-.connect-wallet-container img {
+.connect-wallet-container-img {
+  height: 250px;
   padding-bottom: 20px;
 }
 
 .connect-wallet-button {
-  background-color: linear-gradient(
+  height: 45px;
+  border: 0;
+  width: auto;
+  padding-left: 40px;
+  padding-right: 40px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  background: linear-gradient(
     to right,
     #ff8177 0%,
     #ff867a 0%,
@@ -99,9 +111,7 @@ header{
     #cf556c 78%,
     #b12a5b 100%
   );
-  background-size: 200% 200%;
-  animation: gradient-animation 4s ease infinite;
-}
+  }
 
 .mint-button {
   background: blue;
