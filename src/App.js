@@ -109,7 +109,7 @@ const App = () => {
 					console.log("Domain minted! https://mumbai.polygonscan.com/tx/"+tx.hash);
 					
 					// Set the record for the domain
-					tx = contract.setRecord(domain, record);
+					tx = await contract.setRecord(domain, record);
 					await tx.wait();
 	
 					console.log("Record set! https://mumbai.polygonscan.com/tx/"+tx.hash);
