@@ -155,7 +155,7 @@ header{
   justify-content: center;
   align-items: center;
   padding-bottom: 30px;
-  background-color: #0d1116;
+  background-color: #181818;
 }
 
 .twitter-logo {
@@ -228,6 +228,7 @@ input:focus {
   justify-content: center;
   align-items: center;
   margin-top: 20px;
+  background-color: #181818;
 }
 
 .mint-item {
