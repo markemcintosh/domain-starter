@@ -132,7 +132,7 @@ const App = () => {
 		try {
 			const { ethereum } = window;
 			if (ethereum) {
-				// You know all this
+				
 				const provider = new ethers.providers.Web3Provider(ethereum);
 				const signer = provider.getSigner();
 				const contract = new ethers.Contract(CONTRACT_ADDRESS, contractABI.abi, signer);
@@ -222,11 +222,11 @@ const App = () => {
 					{/* If the editing variable is true, return the "Set record" and "Cancel" button */}
 					{editing ? (
 						<div className="button-container">
-							// This will call the updateDomain function we just made
+							
 							<button className='cta-button mint-button' disabled={loading} onClick={updateDomain}>
 								Set record
 							</button>  
-							// This will let us get out of editing mode by setting editing to false
+							
 							<button className='cta-button mint-button' onClick={() => {setEditing(false)}}>
 								Cancel
 							</button>  
